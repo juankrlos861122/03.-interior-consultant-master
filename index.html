@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devChallenges | Interior Consultant</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="icon" href="./images/devchallenges.png">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <a class="principal-button" href="#">This interior</a>
+          <div style="left: 100%;" class="menu-collapsible" id="menu-toggle">
+            <a onclick="toggle()" href="javascript:void(0);">
+              <span class="material-symbols-rounded icon-close">close</span>
+            </a>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#collection">Collection</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a class="principal-menu" onclick="toggle()" href="javascript:void(0);">
+            <span class="material-symbols-rounded icon-menu">menu</span>
+          </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-principal">
+        <h1>Modern interior</h1>
+        <p>
+          A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+        </p>
+        <a href="#readMore">
+          Read more 
+          <span class="material-symbols-rounded icon-trending-flat">
+            trending_flat
+          </span>
+        </a>
+      </section>
+
+      <section class="section-card">
+        <img src="./images/photo1.png" alt="imagen diseño final">
+        <div class="card">
+          <span class="card-img"></span>
+          <h3 class="card-name">Aliza Webber</h3>
+          <p class="card-job">Interior designer</p>
+          <p class="card-designed">Designed in 2020 by Aliza Webber</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Created by <a href="https://devchallenges.io/portfolio/juankrlos861122">Juankrlos861122</a> - devChallenges.io
+    </footer>
+
+    <script>
+      function toggle(){
+        var x = document.getElementById('menu-toggle');
+        
+        if (x.style.left == '100%') {
+          x.style.left = '0%';
+        } else {
+          x.style.left = '100%';
+        }
+      }
+    </script>
+  </body>
+</html>
